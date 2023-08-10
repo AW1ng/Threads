@@ -66,11 +66,7 @@ class Poezd {
 				this_thread::sleep_for( std::chrono::seconds( WayTime ) );
 				cout << Name + " arriving to " + Destination->GetName() + "\n"; 
 				Destination->Arrive( this );
-//				cout << Name + " arrived to " + Destination->GetName() + "\n"; 
-//				cout << Name + " waiting " + to_string(StayTime) + " for depart\n";
-//				this_thread::sleep_for( std::chrono::seconds( StayTime ) );
-//				cout << Name + " departing from " + Destination->GetName() + "\n"; 
-//				Destination->Depart();
+
 				cout << Name + " departed from " + Destination->GetName() + '\n';
 			}
 };
