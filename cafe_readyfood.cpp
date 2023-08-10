@@ -133,8 +133,7 @@ class Cooker {
         int SpentTime;
         ProtectedStorage<Dish> *MidOfficiantTable;
         ProtectedStorage<ReadyDish> *MidDeliveryTable;
-        //static Dish CurrentOrder;
-        //map< string, int(*)(int , string , int ) > Recipes;
+
         map< string, int(*)( int ) > Recipes;
         int InitRecipes() {
             cout<<"Initing recipes...\n";
@@ -389,49 +388,6 @@ int main() {
 	Restaurant *MyRestaurant = new Restaurant;
 	delete MyRestaurant;
 	
-//    srand((unsigned)time(0)); // this is not enought for randomizing on windows
-//    ProtectedStorage<Dish> *OffCookTable = new ProtectedStorage<Dish>;
-//    ProtectedStorage<ReadyDish> *CookDelTable = new ProtectedStorage<ReadyDish>;
-//    Cooker *Povar = new Cooker(OffCookTable, CookDelTable);
-//    CallCenter *MyCallCenter = new CallCenter(Povar, OffCookTable);
-////    delete Povar;
-//    thread Reporting = OffCookTable->ThreadForReport(500,15);
-//    thread ReportingR = CookDelTable->ThreadForReport(500, 20);
-//    //Dish *W1 = new Dish;
-//    //OffCookTable->Put( *W1 );
-//    //OffCookTable->Print();
-//    //vector<string> R = Povar->GetRecipesList(); for(auto s : R)cout<<s+"\n";
-//    //Officiant *Penny = new Officiant( Povar, OffCookTable );
-//    //vector<string> D = Penny->GetDishesList(); for(auto s : D)cout<<s+"\n";
-//    //for(int i = 0 ; i < 10 ; i++ ) Penny->PlaceRandomOrder();
-//    //Penny->PlaceOrders();
-////    thread Thr1 = Penny->ThreadForPlaceOrders(7);
-//    //thread Thr2 = Penny->ThreadForPlaceOrders(7);
-//    //Thr1.join();
-//    //Thr2.join();
-//    
-////    delete MyCallCenter;
-//    
-////    this_thread::sleep_for(chrono::milliseconds( 200 ) ); // change if dosent work propperly
-//
-//    Kitchen *MyKitchen = new Kitchen( OffCookTable, CookDelTable); 
-//    Delivery *MyDelivery = new Delivery( CookDelTable, 5, 200 );
-//    
-//    delete MyCallCenter;
-//	delete MyKitchen;
-//	delete MyDelivery;
-//    Reporting.join(); ReportingR.join();
-//    
-//    //OffCookTable->Print();
-//
-//    //CookSushi(5);
-//    //CookPizza(4);
-//    //Povar->Cook( &CookSushi , 4 , "kuku" , 150 ); 
-//    //Povar->Cook( "Sushi" , 4 , "kukareku", 250);
-//    
-////    Povar->GetOrder(*W1);
-//    delete Povar; //delete Penny; //delete W1;
-//    delete OffCookTable; delete CookDelTable;
     return 0;
     }
 
